@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: grid;
+    grid-template: 1fr 5fr/1fr 5fr;
+    width: 100vw;
+    height: 100vh;
+}
+.sidePanel{
+    background-color: rgb(144, 69, 155);
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: grid;
+    min-width: 10rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr repeat(12,1fr) 5fr;
+}
+.dashboard{
+    grid-row: 1/3;
+}
+.communities{
+    grid-row: 8/11;
+}
+img{
+    width: 1.2rem;   
+}
+.sideCard img{
+    display: inline-block;
+    filter:  invert(1);
+    margin-left: 10%;
+}
+
+.sideCard{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    align-items: self-start;
+    color: white;
+    font-size: large;
+    padding: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 1rem;
+    width: 100%;
+    
+}
+.sideCard:hover{
+    background-color: rgb(52, 20, 52);
+}
+.header{
+    box-sizing: border-box;
+    background-color:rgb(222, 175, 223);
+    display: grid;
+    grid-template-columns: 0.4fr 5fr 0.2fr 0.2fr 0.6fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.2rem;
+    
+}
+.header img{
+    
+    width: 1.5rem;
+    border-radius: 32px;
+}
+#dp{
+    width:2.5rem;
+    border-radius: 32px;
+    background-color: rgb(216, 90, 216);
+}
+#big{
+    width: 3.5rem;
+    background-color: rgb(216, 90, 216);
+}
+input{
+    width: 90%;
+    height: 22px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(236, 225, 225);
+}
+.leftMost{
+    margin-left: 1rem;
+}
+button{
+    width: 4rem;
+    height: 2rem;
+    border-radius: 16px;
+    border:none;
+    background-color: rgb(216, 90, 216);
+}
+button:hover{
+    background-color:rgb(52, 20, 52) ;
+    color: white;
+}
+img:hover{
+    filter: invert(1);
+}
+.contentBody{
+    background-color: rgb(207, 137, 218);
+    display: grid;
+    grid-template-columns: 3fr 1fr ;
+    padding: 2rem;
+    gap: 2rem;
+}
+.horizontalCards{
+    display: grid;
+    grid-template: 0.2fr 1fr 1fr 1fr/1fr 1fr;
+    gap: 2rem;
+}
+.card{
+    border: none;
+    background-color: rgb(222, 175, 223);
+    box-sizing: border-box;
+    padding: 1rem;
+    font-weight: 600;
+    box-shadow: 4px 4px 4px rgb(52, 20, 52),inset 0.5rem 0rem rgb(52, 20, 52);
+
+}
+#projects{
+    grid-column: 1/3;
+}
+
+.verticalCards{
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+    gap: 2rem;
+}
+.vCard{
+    border: none;
+    background-color: rgb(222, 175, 223);
+    box-sizing: border-box;
+    padding: 1rem;
+    font-weight: 600;
+    box-shadow: 4px 4px 4px rgb(52, 20, 52);
+    gap: 2rem;
+}
+.subcard{
+    box-shadow:0px 1px rgb(52, 20, 52);
+    margin: 1rem;
+}
+.headingVertical{
+    margin: 1.5rem;
+}
