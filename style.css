@@ -2,11 +2,14 @@
     margin: 0px;
     padding: 0px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
     display: grid;
     grid-template: 1fr 5fr/1fr 5fr;
     width: 100vw;
     height: 100vh;
+    font-family: 'Roboto',sans-serif;
 }
 .sidePanel{
     background-color: rgb(144, 69, 155);
